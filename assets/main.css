@@ -75,8 +75,19 @@ html, body {
 /******************** Hobbies Section ******************* */
 .hobbies {
   width: 100%;
-  height: 100vh;
-  background: #eee;
+  height: 65vh;
+  background: #fafafa;
+  display: flex;
+  justify-content: center; }
+
+.hobbies-text {
+  font-size: 52px; }
+
+/******************** Hobbies Section ******************* */
+.skills {
+  width: 100%;
+  height: 65vh;
+  background: honeydew;
   display: flex;
   justify-content: center; }
 
