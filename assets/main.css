@@ -11,7 +11,7 @@ html, body {
   border: 0;
   height: 100%;
   width: 100%;
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: "Amatic SC", cursive; }
 
 /* Main styles */
 /******************** Welcome Section ******************* */
@@ -24,12 +24,15 @@ html, body {
 .welcome-text {
   position: absolute;
   color: #fff;
-  font-size: 35px;
+  font-size: 52px;
   font-weight: 300;
   margin: 8% 0 0 6%; }
   .welcome-text p {
     margin: 0;
     letter-spacing: 0.02em; }
+
+.name {
+  border-bottom: 2px solid #fff; }
 
 /******************** Next Button ******************* */
 .next-wrap {
@@ -43,7 +46,11 @@ html, body {
 .next-wrap:hover {
   opacity: 1; }
 
+/******************** Hobbies Section ******************* */
 .hobbies {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
   display: flex;
   justify-content: center; }
 
