@@ -1,6 +1,8 @@
 /* Resets and defaults */
 
 $section-font: 52px
+$gauge-width: 150px
+$dial-width: 20px
 
 html
     box-sizing: border-box
@@ -78,19 +80,24 @@ html, body
     animation: none
     opacity: 1
 
+.left, .right
+    width: 50%
+    height: auto
+    display: inline-block
+
 /******************** Hobbies Section ********************/
 
 .hobbies
-    width: 100%
-    height: 65vh
     background: #fafafa
-    display: flex
-    justify-content: center
 
 .hobbies-text
     font-size: $section-font
+    margin: 0 0 0 10px
 
-/******************** Hobbies Section ********************/
+.hobbies-label
+    display: block
+    font-size: 40px
+    text-align: center
 
 .skills
     width: 100%
@@ -98,3 +105,48 @@ html, body
     background: honeydew
     display: flex
     justify-content: center
+
+.hobbies-item
+    //display: flex
+    //justify-content: center
+    //align-items: center
+    //flex-wrap: wrap
+    //height: 320px
+    width: calc(100vw / 4)
+
+.gauge
+    height: ($gauge-width / 2)
+    width: $gauge-width
+    background: #81C784
+    border-radius: $gauge-width $gauge-width 0 0
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    margin: 0 auto
+
+.inner-gauge
+    height: 37.5px
+    width: 75px
+    border-radius: 75px 75px 0 0
+    background: #fafafa
+
+.dial
+    width: $dial-width
+    height: ($dial-width / 2)
+    border-radius: $dial-width $dial-width 0 0
+    background: #424242
+
+.drum-dial
+    margin: 28px 0 0 27.5px
+
+.hand
+    width: 4px
+    height: 50px
+    background: #424242
+    border: 1px solid #424242
+    border-radius: 10px
+    position: absolute
+
+.drum-hand
+    transform: rotate(85deg)
+    margin: 19px 0 0 32px
